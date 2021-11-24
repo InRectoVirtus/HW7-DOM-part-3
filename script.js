@@ -9,7 +9,7 @@ global.addEventListener('click', (a) => {
         if(tdInput.value.length === 0) {
             tdInput.value = 'Empty'
         } else {
-            createTodoItem(tdInput, tdList)
+            creator(tdInput, tdList)
         }
     }
 })
@@ -26,7 +26,7 @@ function creator(i, l) {
     yes.classList = 'yes';
     block.append(yes);
     let delet = document.createElement('button');
-    delet.innerHTML = 'Удалить';
+    delet.innerHTML = `Удалить ${i.value}`;
     delet.classList = 'delet';
     block.append(delet);
     l.append(block);
@@ -43,15 +43,15 @@ tdList.addEventListener('click', function (a) {
     }
 })
 const toggler = (c) => {
-    const o = c.parentElement
-    if(o) {
-        o.classList.toggle('green')
-    } else if(o.classList = 'green') {
-        o.classList.toggle('green')
+    const parental = c.parentElement
+    if(parental) {
+        parental.classList.toggle('green')
+    } else if(parental.classList = 'green') {
+        parental.classList.toggle('green')
     } 
 }
 const deleteBlock = (c) => {
-    const o = c.parentElement
-    o.classList = 'null'
-    o.remove()
+    const parental = c.parentElement
+    parental.classList = 'null'
+    parental.remove()
 }
