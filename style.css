@@ -1,0 +1,26 @@
+.mount {
+    margin: auto;
+}
+
+.delet {
+    background-color: red;
+}
+
+.yes {
+    background-color: lawngreen;
+}
+
+.block{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.green {
+    background-color: green;
+}
+
+.null {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
