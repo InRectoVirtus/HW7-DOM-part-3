@@ -1,26 +1,16 @@
-.mount {
-    margin: auto;
+.list {
+    list-style: none;
+    padding: 1rem;
+    width: 50%;
 }
 
-.delet {
-    background-color: red;
-}
-
-.yes {
-    background-color: lawngreen;
-}
-
-.block{
-    background-color: yellow;
+.list-item {
+    background: green;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-.green {
-    background-color: green;
-}
-
-.null {
-    transform: translateY(8rem) rotateZ(20deg);
-    opacity: 0;
+.list-item__todo {
+    background: yellow;
 }
